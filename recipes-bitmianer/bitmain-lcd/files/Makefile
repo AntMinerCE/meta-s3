@@ -17,15 +17,15 @@ else
 
 PWD := $(shell pwd)
 
-#KERNEL_DIR := /lib/modules/`uname -r`/build
+KERNEL_DIR := /lib/modules/`uname -r`/build
 
-KERNEL_DIR := /home/xxl/AM335x/kernel/kernel
+#KERNEL_DIR := /home/xxl/AM335x/kernel/kernel
 
 all : modules
 
 modules:
 	$(MAKE) -C $(KDIR) M=$(PWD) ARCH=$(ARCH)  modules
-	cp -rf $(TARGET).ko /tftpboot/
+	#cp -rf $(TARGET).ko /tftpboot/
 clean:
 
 	rm -rf .*.cmd *.o *.mod.c *.ko .tmp_versions Module.markers modules.order Module.symvers
