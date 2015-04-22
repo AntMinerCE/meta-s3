@@ -4,7 +4,7 @@ LICENSE = "CLOSED"
 #LIC_FILES_CHKSUM = "file://COPYING;md5=d32239bcb673463ab874e80d47fae504"
 #LIC_FILES_CHKSUM = "file://COPYING"
 
-DEPENDS = "ncurses curl"
+DEPENDS = "ncurses curl udev"
 
 #SRCREV = "v3.8.3-knc"
 #PV = "${SRCREV}+git${SRCPV}"
