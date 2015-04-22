@@ -20,5 +20,5 @@
 "api-listen" : true,
 "api-network" : true,
 "api-allow" : "W:0/0",
-"bitmain-freq" : "5:200:0782",
+"bitmaintempoverctrl" : true
 }
