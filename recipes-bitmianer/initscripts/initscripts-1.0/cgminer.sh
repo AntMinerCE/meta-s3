@@ -44,9 +44,9 @@ do_start() {
 		insmod /lib/modules/`uname -r`/kernel/drivers/bitmain/bitmain_spi.ko fpga_ret_prnt=0 rx_st_prnt=0
 	fi
 	#control console printk level
-	real_freq="`awk '{if($1 == "option" && $2=="\047freq_value\047") print $3}' $CONFIG_NAME | sed "s/'//g"`"
-	chip_value=`awk '{if($1 == "option" && $2=="\047chip_freq\047") print $3}' $CONFIG_NAME | sed "s/'//g"`
-	timeout=`awk '{if($1 == "option" && $2=="\047timeout\047") print $3}' $CONFIG_NAME | sed "s/'//g"`
+	real_freq=0782
+	chip_value=200
+	timeout=40
 
 	PARAMS="--bitmain-dev /dev/bitmain-asic --bitmain-options 115200:32:8:$timeout:$chip_value:$real_freq --bitmain-checkn2diff --bitmain-hwerror --queue 320"
 	echo PARAMS = $PARAMS
