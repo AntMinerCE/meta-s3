@@ -3,7 +3,7 @@ DESCRIPTION = "Kernel Module Bitmain spi Fpga Driver"
 HOMEPAGE = "http://www.example.com"
 SECTION = "kernel/modules"
 PRIORITY = "optional"
-LICENSE = "CLOSED"
+LICENSE = "GPLv2"
 KERNEL_VERSION="3.8.13"
 
 RRECOMMENDS_${PN} = "kernel (= ${KERNEL_VERSION})"
